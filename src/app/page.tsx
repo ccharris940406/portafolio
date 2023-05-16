@@ -7,7 +7,7 @@ export default function Home() {
       <div className="flex justify-center content-center h-screen bg-paletteBlack md:p-[10rem] md:pt-[15rem]">
         <div className="flex flex-col items-center self-center justify-center">
           <p className="md:text-3xl text-center text-paletteText mb-10">
-            Hello! I'm{" "}
+            Hello! I&apos;m{" "}
             {
               <text className="text-xl text-paletteBlue md:text-4xl">
                 Carlos César Harris Castillo

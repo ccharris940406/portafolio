@@ -76,7 +76,7 @@ export default function NavBar() {
         >
           {navigation.map((nav) => {
             return (
-              <Link href={nav.url}>
+              <Link key={nav.url} href={nav.url}>
                 <li
                   onClick={() => {
                     setMenuHide(true);
