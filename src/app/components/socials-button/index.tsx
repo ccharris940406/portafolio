@@ -31,9 +31,11 @@ export default function SocialsBotton() {
           <FaTelegramPlane className="text-center self-center text-2xl hover:text-4xl text-paletteBlack" />
         </button>
       </Link>
-      <button className="flex rounded-full w-12 h-12 bg-paletteBlue justify-center">
-        <FaWhatsapp className="text-center self-center text-3xl hover:text-4xl text-paletteBlack" />
-      </button>
+      <Link target="_blank" href={"https://wa.me/qr/2UM45KWJFHMQN1"}>
+        <button className="flex rounded-full w-12 h-12 bg-paletteBlue justify-center">
+          <FaWhatsapp className="text-center self-center text-3xl hover:text-4xl text-paletteBlack" />
+        </button>
+      </Link>
     </div>
   );
 }

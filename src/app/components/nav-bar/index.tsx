@@ -6,13 +6,13 @@ import { useEffect, useState } from "react";
 const navigation = [
   { title: "Home", url: "/" },
   { title: "About", url: "./about" },
-  { title: "Projects", url: "" },
-  { title: "Contact", url: "" },
+  { title: "Projects", url: "#home" },
+  { title: "Contact", url: "./#contact" },
 ];
 
 export default function NavBar() {
   const [logoHide, setLogoHide] = useState(true);
-  const [menuHide, setMenuHide] = useState(false);
+  const [menuHide, setMenuHide] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -21,11 +21,15 @@ export default function NavBar() {
     if (window.scrollY > 100) setLogoHide(false);
     else setLogoHide(true);
   };
-  // `${navColored ? "fixed" : ""}`
+
   return (
     <nav
-      className={`flex fixed p-4 h-auto w-full md:h-20 justify-between shadow-2xl
-       backdrop-blur-sm bg-paletteBlack opacity-95`}
+      className={`flex fixed p-4 h-auto w-full md:h-20 justify-between ${
+        !logoHide
+          ? "shadow-md backdrop-blur-sm shadow-paletteBla rounded-xl"
+          : ""
+      }
+        bg-paletteBlack `}
     >
       {
         <Image
