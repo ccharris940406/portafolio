@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const navigation = [
-  { title: "Home", url: "/" },
+  { title: "Home", url: "#home" },
   { title: "About", url: "./about" },
   { title: "Projects", url: "#home" },
   { title: "Contact", url: "./#contact" },
@@ -24,7 +24,7 @@ export default function NavBar() {
 
   return (
     <nav
-      className={`flex fixed p-4 h-auto w-full md:h-20 justify-between ${
+      className={`flex z-50 fixed p-4 h-auto w-full md:h-20 justify-between ${
         !logoHide
           ? "shadow-md backdrop-blur-sm shadow-paletteBla rounded-xl"
           : ""
@@ -51,14 +51,13 @@ export default function NavBar() {
       <div className="flex-row w-auto md:block self-center">
         <button
           className={`
-         inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden`}
+         p-2 text-sm text-paletteText rounded-lg md:hidden`}
           onClick={() => {
             setMenuHide((curren) => {
               return !curren;
             });
           }}
         >
-          <span className="sr-only">Open main menu</span>
           <svg
             className="w-6 h-6"
             aria-hidden="true"

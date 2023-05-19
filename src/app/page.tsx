@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="contact">
+      <div className="" id="contact">
         <Contact />
       </div>
     </div>
