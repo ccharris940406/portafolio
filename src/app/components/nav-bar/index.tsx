@@ -46,33 +46,36 @@ export default function NavBar() {
         />
       }
 
-      <div className="flex-row w-auto md:block self-center">
-        <button
-          className={`
-         p-2 text-sm text-paletteText rounded-lg md:hidden`}
-          onClick={() => {
-            setMenuHide((curren) => {
-              return !curren;
-            });
-          }}
-        >
-          <svg
-            className="w-6 h-6"
-            aria-hidden="true"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
+      <div className="flex-row w-[25%] md:block self-center">
+        <div className="flex justify-end">
+          <button
+            className={`p-2 text-sm text-paletteText rounded-lg md:hidden`}
+            onClick={() => {
+              setMenuHide((curren) => {
+                return !curren;
+              });
+            }}
           >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
+            <svg
+              className="w-6 h-6"
+              aria-hidden="true"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
         <ul
           className={`${menuHide ? "hidden" : ""}
-        flex flex-col border rounded-lg md:flex-row md:border-none w-full md:flex md:w-auto text-paletteText text-xl mr-10
+        flex flex-col border rounded-lg
+        justify-center 
+        md:flex-row md:border-none w-full md:flex md:w-auto text-paletteText text-xl mr-10
          `}
         >
           {navigation.map((nav) => {
