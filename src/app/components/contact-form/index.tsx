@@ -70,7 +70,10 @@ export default function Contact() {
           cols={20}
           rows={5}
         />
-        <button className="bg-paletteBrown self-center text-paletteText p-2 rounded-xl md:text-xl">
+        <button
+          className={`bg-paletteBrown self-center text-paletteText p-2 rounded-xl md:text-xl`}
+          disabled={sendingEmail}
+        >
           {!sendingEmail ? "Submmit" : "Sending"}
         </button>
       </form>

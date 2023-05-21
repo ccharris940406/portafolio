@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 
 const navigation = [
   { title: "Home", url: "#home" },
-  { title: "About", url: "./about" },
-  { title: "Projects", url: "#home" },
   { title: "Contact", url: "./#contact" },
 ];
 
