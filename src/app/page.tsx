@@ -1,6 +1,7 @@
 import Contact from "./components/contact-form";
 import MainLogo from "./components/main-logo";
 import SocialsBotton from "./components/socials-button";
+import MyImage from "../../public/coverphoto.png";
 import Image from "next/image";
 
 export default function Home() {
@@ -35,10 +36,11 @@ export default function Home() {
         <div className="flex justify-center md:w-[30%] self-center align-middle">
           <Image
             className="w-60 mb-10 h-full rounded-xl self-center md:w-auto md:ml-10"
-            src={"/coverphoto.png"}
+            src={MyImage}
             alt={"My photo"}
             width={2000}
             height={2000}
+            placeholder="blur"
           />
         </div>
         <div className="md:w-[70%] m-2 md:m-10">
