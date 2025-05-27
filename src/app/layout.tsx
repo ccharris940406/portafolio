@@ -11,7 +11,7 @@ export const metadata = {
     siteName: "Harri's Portafolio",
     images: [
       {
-        url: "", // URL de la imagen para compartir
+        url: "https://ccharris.vercel.app/LogoTextVertical.png", // URL de la imagen para compartir
         width: 1200,
         height: 630,
       },
