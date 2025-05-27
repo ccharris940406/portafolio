@@ -2,8 +2,8 @@ import NavBar from "./components/nav-bar";
 import "./globals.css";
 
 export const metadata = {
-title: "Harri's Portafolio",
-  description: "Personal Portafolio",
+title: "Carlos César Harris Castillo | Harri's Portafolio",
+  description: "Portafolio personal de Carlos César Harris Castillo, desarrollador frontend con experiencia en React, Next.js y más.",
   openGraph: {
     title: "Harri's Portafolio",
     description: "Personal Portafolio",
