@@ -2,7 +2,7 @@ import NavBar from "./components/nav-bar";
 import "./globals.css";
 
 export const metadata = {
-  title: "Harri's Portafolio",
+title: "Harri's Portafolio",
   description: "Personal Portafolio",
   openGraph: {
     title: "Harri's Portafolio",
@@ -11,9 +11,10 @@ export const metadata = {
     siteName: "Harri's Portafolio",
     images: [
       {
-        url: "https://ccharris.vercel.app/LogoTextVertical.png", // URL de la imagen para compartir
+        url: "https://ccharris.vercel.app/LogoTextVertical.png",
         width: 1200,
         height: 630,
+        alt: "Logo vertical de Harri",
       },
     ],
     type: "website",
@@ -22,7 +23,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Harri's Portafolio",
     description: "Personal Portafolio",
-    images: [""],
+    images: ["https://ccharris.vercel.app/LogoTextVertical.png"],
   },
 };
 
